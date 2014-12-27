@@ -1,3 +1,2 @@
 //= require react-with-addons
-//
-//= require_tree .
+//= require app.js.jsx

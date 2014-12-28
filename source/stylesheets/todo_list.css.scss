@@ -1,0 +1,29 @@
+.todo-items {
+  .todo-item {
+    display: block;
+    width: 100%;
+    padding: 4px 7px;
+    border: 1px solid #F0F0F0;
+    margin-bottom: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #000;
+    @include border-radius(3px);
+    @include box-shadow(inset -1px -1px 3px #F0F0F0);
+
+    &:hover,
+    &.done {
+      text-decoration: line-through;
+    }
+
+    &.done {
+      color: #A7A7A7;
+    }
+  }
+
+  input[type=text] {
+    &.todo-item {
+      text-decoration: none;
+    }
+  }
+}

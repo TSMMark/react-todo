@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @import "compass";
-@import "normalize";
+@import "_normalize";
 @import "bootstrap";
-@import "mixins";
+@import "_mixins";
 @import "font-awesome";
-@import "todo_list";
+@import "_todo_list";

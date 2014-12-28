@@ -2,8 +2,9 @@
   'use strict';
 
   var supportedBrowser = !!window.localStorage
+    , todoAppElement = document.getElementById('todo-app')
 
-  if (!supportedBrowser) return
+  if (!supportedBrowser || !todoAppElement) return
 
   function render () {
     var todoItems = TodoItemModel.findAll()
@@ -14,7 +15,7 @@
 
     React.render(
       <TodoApp todoItems={todoItems} />,
-      document.getElementById('todo-app')
+      todoAppElement
     )
   }
 

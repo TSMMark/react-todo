@@ -10,5 +10,11 @@ window.Utils = {
     })
 
     return into
+  },
+
+  async: function (fn) {
+    setTimeout(function () {
+      fn();
+    }, 0);
   }
 }

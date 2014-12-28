@@ -11,10 +11,18 @@ window.TodoApp = React.createClass({
   },
 
   render: function () {
+    var numItems = this.props.todoItems.length
+      , h1 = "I need to" +
+             (numItems ? " do " + numItems + " things" : "") +
+             "..."
     return(
-      <div className="todo-items">
-        {this.props.todoItems}
-        {this.state.addNew}
+      <div className="todo-app">
+        <h1>{h1}</h1>
+        <div className="todo-items">
+          {this.props.todoItems}
+          {this.state.addNew}
+        </div>
+        <p className="note">Click "Add an item", enter a title, hit the return key.</p>
       </div>
     )
   },

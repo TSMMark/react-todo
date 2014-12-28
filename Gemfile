@@ -17,3 +17,5 @@ gem "react-source"
 gem "middleman-react"
 
 gem "bootstrap-sass", require: false
+
+gem "font-awesome-middleman"
